@@ -26,4 +26,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           source: "src/"
           strip_components: 1
-          target: "/var/www/html"
+          target: "~/html"
