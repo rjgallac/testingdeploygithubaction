@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   Deploy-to-Prod:      
@@ -30,4 +30,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           source: "src/"
           strip_components: 1
-          target: "~/html"
+          target: "~/htmldev"
