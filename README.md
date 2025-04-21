@@ -4,5 +4,8 @@ https://dev.to/hnrq/using-github-actions-to-deploy-a-web-page-to-raspberry-pi-46
 
 docker run --name some-nginx -p80:80 -v ~/html:/usr/share/nginx/html:ro -d nginx
 
+docker run --name some-nginx-dev -p82:80 -v ~/htmldev:/usr/share/nginx/html:ro -d nginx
+
+
 add .ssh/id_rsa to secret in github actions
 add .ssh/id_rsa.pub to authorised_keys on raspberry pi
